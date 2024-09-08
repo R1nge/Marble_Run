@@ -1,10 +1,18 @@
-﻿using UnityEngine;
+﻿using _Assets.Scripts.Services.StateMachine;
+using _Assets.Scripts.Services.UIs.StateMachine;
+using UnityEngine;
 
 namespace _Assets.Scripts.UIs.MainMenu
 {
     public class MainMenuController
     {
         private MainMenuView _mainMenuView;
+
+        private MainMenuController(GameStateMachine gameStateMachine, UIStateMachine uiStateMachine)
+        {
+            Debug.Log(gameStateMachine);
+            Debug.Log(uiStateMachine);
+        }
 
         public void Init(MainMenuView mainMenuView)
         {

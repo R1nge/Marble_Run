@@ -1,5 +1,4 @@
 using _Assets.Scripts.Configs;
-using _Assets.Scripts.UIs.MainMenu;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
@@ -14,8 +13,6 @@ namespace _Assets.Scripts.CompositionRoot
         {
             builder.RegisterComponent(configProvider);
             builder.Register<SceneService>(Lifetime.Singleton).AsImplementedInterfaces().AsSelf();
-
-            builder.Register<MainMenuController>(Lifetime.Singleton);
         }
     }
 }

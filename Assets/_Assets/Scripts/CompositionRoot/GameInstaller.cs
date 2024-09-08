@@ -1,6 +1,7 @@
 using _Assets.Scripts.Services.StateMachine;
 using _Assets.Scripts.Services.UIs;
 using _Assets.Scripts.Services.UIs.StateMachine;
+using _Assets.Scripts.UIs.MainMenu;
 using VContainer;
 using VContainer.Unity;
 
@@ -16,6 +17,13 @@ namespace _Assets.Scripts.CompositionRoot
             
             builder.Register<GameStatesFactory>(Lifetime.Singleton);
             builder.Register<GameStateMachine>(Lifetime.Singleton);
+            
+            RegisterControllers(builder);
+        }
+
+        private void RegisterControllers(IContainerBuilder builder)
+        {
+            builder.Register<MainMenuController>(Lifetime.Singleton);
         }
     }
 }
