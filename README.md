@@ -7,3 +7,11 @@ Would support:
 - ECS based simulation to allow for more complex calculations and physics consistency
 - A Multiplayer mode
 - Steam workshop
+
+
+
+TODO:
+- [] Marbles (Physics)
+- [] Spawn at start point
+- [] Start point
+- [] End point

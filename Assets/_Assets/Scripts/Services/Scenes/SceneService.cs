@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using VContainer.Unity;
 
-public class SceneSerivce : IInitializable
+public class SceneService : IInitializable
 {
     private Dictionary<SceneType, string> _scenes;
     private SceneType _currentScene;

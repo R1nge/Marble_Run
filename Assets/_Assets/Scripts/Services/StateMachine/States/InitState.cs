@@ -17,6 +17,8 @@ namespace _Assets.Scripts.Services.StateMachine.States
         public async UniTask Enter()
         {
             await _uiStateMachine.SwitchState(UIStateType.Loading);
+            await UniTask.WaitForSeconds(1f);
+            await _uiStateMachine.SwitchState(UIStateType.MainMenu);
         }
 
         public async UniTask Exit()

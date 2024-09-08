@@ -18,6 +18,8 @@ namespace _Assets.Scripts.Services.UIs.StateMachine
             {
                 case UIStateType.Loading:
                     return new UILoadingState(_uiFactory, uiStateMachine);
+                case UIStateType.MainMenu:
+                    return new UIMainMenuState(_uiFactory, uiStateMachine);
                 case UIStateType.Game:
                     return new UIGameState(_uiFactory);
                 default:
