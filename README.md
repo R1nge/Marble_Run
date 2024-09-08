@@ -15,3 +15,10 @@ TODO:
 - [] Spawn at start point
 - [] Start point
 - [] End point
+
+
+Main game loop
+- [] Play - load level
+- [] Spawn a marble at a start point
+- [] If touched the target - win
+- [] 

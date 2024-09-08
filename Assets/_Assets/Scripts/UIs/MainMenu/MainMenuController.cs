@@ -7,11 +7,11 @@ namespace _Assets.Scripts.UIs.MainMenu
     public class MainMenuController
     {
         private MainMenuView _mainMenuView;
+        private readonly GameStateMachine _gameStateMachine;
 
         private MainMenuController(GameStateMachine gameStateMachine, UIStateMachine uiStateMachine)
         {
-            Debug.Log(gameStateMachine);
-            Debug.Log(uiStateMachine);
+            _gameStateMachine = gameStateMachine;
         }
 
         public void Init(MainMenuView mainMenuView)
@@ -22,10 +22,7 @@ namespace _Assets.Scripts.UIs.MainMenu
             _mainMenuView.QuitButton.onClick.AddListener(Quit);
         }
 
-        private void Play()
-        {
-            Debug.Log("Play");    
-        }
+        private void Play() => _gameStateMachine.SwitchState(GameStateType.Game);
 
         private void Settings()
         {

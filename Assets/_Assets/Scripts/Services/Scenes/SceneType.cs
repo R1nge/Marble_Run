@@ -1,5 +1,9 @@
-public enum SceneType : byte
+namespace _Assets.Scripts.Services.Scenes
 {
-    Boot,
-    Main
+    public enum SceneType : byte
+    {
+        Boot,
+        Main,
+        Level1
+    }
 }
